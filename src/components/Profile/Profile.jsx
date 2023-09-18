@@ -1,6 +1,6 @@
-import { Avatar, List, ListItem, Profile, Description, Name, Tag, Location, Label, Quantity } from './Profile.styled';
+import { Avatar, List, ListItem, ProfileWrapper, Description, Name, Tag, Location, Label, Quantity } from './Profile.styled';
 
-export const UserData = ({
+export const Profile = ({
   username,
   tag,
   location,
@@ -8,7 +8,7 @@ export const UserData = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <Profile>
+    <ProfileWrapper>
       <Description>
         <Avatar src={avatar} alt="User avatar" width="100px" height="100px" />
         <Name>{username}</Name>
@@ -30,6 +30,6 @@ export const UserData = ({
           <Quantity>{likes}</Quantity>
         </ListItem>
       </List>
-    </Profile>
+    </ProfileWrapper>
   );
 };

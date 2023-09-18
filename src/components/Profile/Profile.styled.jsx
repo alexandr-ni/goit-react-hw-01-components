@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Profile = styled.div`
+export const ProfileWrapper = styled.div`
   width: 200px;
   background-color: #dddfe1;
   border-radius: 5px;
@@ -46,7 +46,6 @@ export const ListItem = styled.li`
   display: flex;
   flex-direction: column;
   padding: 8px;
-  overflow: hidden;
   background-color: ${props => props.theme.colors.gray};
 `;
 
