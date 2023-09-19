@@ -17,6 +17,7 @@ export const FriendListItem = styled.li`
   gap: 10px;
   font-weight: 600;
   border-radius: 2px;
+  background-color: ${props => props.theme.colors.white};
   box-shadow: 1px 2px 5px 2px #9b9b9b;
 `;
 
