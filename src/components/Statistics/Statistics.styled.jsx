@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-function getRandomHexColor(number) {
-  return `#${Math.floor((Math.random() * 16777215) / number)
+export function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
@@ -35,9 +35,8 @@ export const StatItem = styled.li`
   flex-basis: 50px;
   align-items: center;
   color: ${props => props.theme.colors.white};
-  background-color: ${props => getRandomHexColor(props.number)};
 `;
 
 export const Percentage = styled.span`
-  font-size: 25px;
+  font-weight: 500;
 `;
