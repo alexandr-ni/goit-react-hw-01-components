@@ -10,8 +10,7 @@ import {
 export const Statistics = ({ title, stats }) => {
   return (
     <StatisticsWrapper>
-      <Title>{title}</Title>
-
+      {title && <Title>{title}</Title>}
       <StatList>
         {stats.map(item => {
           return (
